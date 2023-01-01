@@ -1,4 +1,4 @@
 # Rusty-chess
-A simple chess game written on rust
+A simple chess game written on rust with lot of missing functionality ;(
 
- Can you recite chess in mind? ;)
+ But hey, you can recite chess in mind instead ;)
