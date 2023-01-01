@@ -6,12 +6,7 @@ fn main() {
 
     loop {
         // Print the board
-        for row in board.iter() {
-            for &col in row.iter() {
-                print!("{} ", col);
-            }
-            println!();
-        }
+        print_board(&board);
 
         // Get the move from the user
         println!("Enter move for {} (e.g. a2 a4):", turn);
@@ -44,5 +39,16 @@ fn main() {
         } else {
             turn = 'w';
         }
+    }
+}
+
+fn print_board(board: &[[char; 8]; 8]) {
+    println!("  a b c d e f g h");
+    for (i, row) in board.iter().enumerate() {
+        print!("{} ", i + 1);
+        for &col in row.iter() {
+            print!("{} ", col);
+        }
+        println!();
     }
 }
